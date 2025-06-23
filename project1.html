@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"href="/img/myimage1.jpg">
+</head>
+<style>
+     
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #b9d87c;
+}
+
+ 
+  .image-row {
+    display: flex;
+    gap: 20px;
+  }
+ 
+
+ 
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-top: 80px;
+}
+
+nav{
+    background-color: #88f6f8;
+    width: 100vw;
+    min-height: 70px;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-size: 25px;
+    list-style: none;
+    gap: 40px;
+    color: white;
+
+}
+
+li:hover{
+    color: aqua;
+}
+
+.card{
+    height: 520px;
+    width: 400px;
+    background-color: #65758b;
+    border-radius: 15px;
+    padding: 0 20px 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+img{
+    height: 200px;
+    width: 180px;
+    margin-bottom: 30px;
+
+}
+
+p{
+    padding: 30px;
+}
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+header {
+  background: #ff4d4d;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 10px;
+}
+
+.category {
+  background: #eee;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;
+  cursor: pointer;
+}
+
+.category p {
+  font-weight: bold;
+}
+
+.deals {
+  margin: 20px;
+  text-align: center;
+}
+
+.deal-card {
+  display: inline-block;
+  padding: 10px;
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+footer {
+  background: #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+</style>
+ 
+<body>
+
+  <button onclick="lowToHigh()">lowToHigh</button>  
+ <button onclick=" higTolow()">higTolow</button> 
+ 
+
+    <input id="searchBox" type="text" placeholder="Type something...">
+  <button onclick="search()">Search</button>
+ 
+  
+
+   
+ <a href="">amazon.in</a>
+    <a href=""> account</a>
+    <a href="">mycart</a>
+    <a href="">contact</a>
+       
+      
+   
+ 
+    
+    <nav>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact</li>
+        <li>Help</li>
+        <li>Coursces</li>
+        <li>Career's</li>
+    </nav>
+    <div  class="image-row"> 
+     
+         <img  src="/img/mw.img"  width="200"> 
+         <img src="/img/kide.img" width="200"> 
+ </div>
+
+        <header>
+    <h1>#CrazyLowPrices</h1>
+    <p>Get up to ₹150 cashback | Free Delivery | 5-day Returns</p>
+  </header>
+
+  <section class="categories">
+    <div class="category" onclick="showAlert('Women')">
+      <p>Women</p>
+      <img src="/img/women.images" alt="">
+      <span>From ₹129</span>
+    </div>
+    <div class="category" onclick="showAlert('Men')">
+      <p>Men</p>
+      <img src="/img/men.img" alt="">
+      <span>From ₹149</span>
+    </div>
+    <div class="category" onclick="showAlert('Home Essentials')">
+      <p>Home</p>
+      <img src="/img/99.img" alt="">
+      <span>From ₹99</span>
+    </div>
+  </section>
+
+  <section class="deals">
+    <h2>Kitchen Deals</h2>
+    <div class="deal-card">
+      <img src="/img/kitchen.img" alt="Kitchen Item" />
+      <p>Min. 35% off</p>
+    </div>
+  </section>
+
+  <footer>
+    
+    <p>Free Delivery | Pay on Delivery | Easy Returns</p>
+  </footer>
+
+   
+    <main>
+         
+            <div class="card">
+                <img src="/img/kid.1.jpeg" alt="img">
+                <h1>RAG</h1>
+                <p> Brand: Toy Balloon <br>
+                     Toy Balloon Kids Sky Blue Knee Length Girls Dress <br>₹499.00  <br> savings-75% ₹499
+                     M.R.P.:<del> M.R.P.: ₹1,999</del> <br>
+                     Inclusive of all taxes</p>
+                <div>
+                    <button>add to cart</button>
+                    <button>buy now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img   src="/img/image2.jpeg">
+                <h1>RAG</h1>
+                <p> Tasarika Women Ethnic jacquard Rama Round Neck Half Sleeve Full Length ethnic dress 2035_Rama <br>
+                    ₹2,636  MRP:<del>₹7,125</del> 63% OFF <br>
+                    Price inclusive of all tax <br>
+                    Seller :TRENDY CULTURE</p>
+ 
+ 
+ 
+ 
+                <div>
+                    <button>add to cart</button>
+                    <button>buy now</button>
+                </div>
+                </div>
+                <div class="card">
+                    <img  src="/img/images3.jpeg" alt="img">
+                    <h1>RAG</h1>
+                    <p> Women Yellow Cotton Printed Round Neck Dresses <br>SeherView Full Collection
+                        Jaypore <br>
+                        ₹2,793.00 <br>
+                       <del>₹ 3,990.00 </del>  
+                        30% OFF</p>
+                    <div>
+                        <button>add to cart</button>
+                        <button>buy now</button>
+                    </div>
+                    </div>
+                 
+                    <div class="card">
+                        <img  src="/img/image4.jpeg" alt="img">
+                        <h1>RAG</h1>
+                        <p> HERE&NOW <br>
+                            Men White Solid Denim Jacket <br>
+|                            MRP₹ 3799 <br>
+                              (Incl. of all taxes)
+                              Discount</p>
+                        <div>
+                            <button>add to cart</button>
+                            <button>buy now</button>
+                        </div>
+                        </div>
+                 
+                        <div class="card">
+                            <img  src="/img/image5.jpeg" alt="img">
+                            <h1>RAG</h1>
+                            <p> Bewakoof®<br>
+                               Men's Blue Icon Printed Oversized Shirt <br>
+                               ₹3,199  48% OFF <br>
+                                 ₹1,649
+                                  inclusive of all taxes</p>
+                            <div>
+                                <button>add to cart</button>
+                                <button>buy now</button>
+                            </div>
+                            </div>
+                 
+                            <div class="card">
+                                <img   src="/img/image6.webp" alt="img">
+                                <h1>RAG</h1>
+                                <p> Embroidered Art Silk Sherwani in Teal Blue
+                                       4034 Reviews on <br>
+                                    MRP<del>₹12,500.0020% </del> <br>₹10,000.00
+                                      <br>Inclusive of all taxes
+                                     Offers:4 <br>
+                                     Shipping:Free</p>
+                                    <div>
+                                    <button>add to cart</button>
+                                    <button>buy now</button>
+                                </div>
+                                </div>
+                 
+                                <div class="card">
+                                    <img  src="/img/image7.webp" alt="img">
+                                    <h1>RAG</h1>
+                                    <p> Kids Girl Tiranga Tricolour Frock Dress for Independence and Republic Day <br>
+                                           Rs. 1,299.00 ,Rs.<del>2,999.00</del>  </p>
+                                    <div>
+                                        <button>add to cart</button>
+                                        <button>buy now</button>
+                                    </div>
+                                    </div>
+                 
+                                    <div class="card">
+                                        <img  src="/img/image8.jpg" alt="img">
+                                        <h1>RAG</h1>
+                                        <p> Tahir Bandi Set <br>
+                                            MRP Rs. 7,267
+                                              MRP Rs.<del> 8,550 </del>   (15% OFF)</p>
+                                        <div>
+                                            <button>add to cart</button>
+                                            <button>buy now</button>
+                                            </div>
+                                            </div>
+                                       
+                             </body>           
+                                     
+ 
+  
+ 
+ 
+ <script> 
+ function showAlert(category) {
+  alert("You clicked on " + category + " category!");
+}
+    function search() {
+      let input = document.getElementById("searchBox").value;
+      alert("You searched for: " + input);
+    }
+ 
+
+ a.sort(  (a,b) => a.price - b.price)  // number
+     a.sort(  (a,b) => a.name.localeCompare(b.name)) // char value
+
+     
+
+ var a=[]
+function  lowToHigh()
+          {
+                    a.sort((a, b)  =>  a.price  - b.price)
+                      console.log(a)
+                      document.writeln(JSON.stringify(a))
+                 
+          }
+
+
+          function  higTolow()
+          {
+                    a.sort((a , b)  =>  b.price  - a.price)
+                      console.log(a)
+                      document.writeln(JSON.stringify(a))
+                 
+          }
+        
+    
+      
+
+
+</script>
+
+</html>
