@@ -1,26 +1,82 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet"href="/img/myimage1.jpg">
+   
 </head>
 <style>
-     
-    *{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: #b9d87c;
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
 }
 
- 
-  .image-row {
-    display: flex;
-    gap: 20px;
-  }
- 
+header {
+  background: #d1ef62;
+  color: rgb(28, 19, 19);
+  padding: 20px;
+  text-align: center;
+}
 
- 
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: rgb(28, 21, 21);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #d8e37a;
+  color: rgb(34, 37, 37);
+  text-align: center;
+  padding: 15px;
+}
+
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -28,27 +84,6 @@ main{
     align-items: center;
     gap: 80px;
     padding-top: 80px;
-}
-
-nav{
-    background-color: #88f6f8;
-    width: 100vw;
-    min-height: 70px;
-     
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    font-size: 25px;
-    list-style: none;
-    gap: 40px;
-    color: white;
-
-}
-
-li:hover{
-    color: aqua;
 }
 
 .card{
@@ -65,33 +100,22 @@ li:hover{
 
     color: white;
 }
-
-img{
-    height: 200px;
-    width: 180px;
-    margin-bottom: 30px;
+ img{
+    height: 150px;
+    width: 250px;
+    margin-bottom: 50px;
 
 }
+
 
 p{
     padding: 30px;
 }
-
-
-
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: #fff;
-}
-
-header {
-  background: #ff4d4d;
-  color: white;
-  padding: 16px;
-  text-align: center;
 }
 
 .categories {
@@ -121,88 +145,153 @@ header {
 .deal-card {
   display: inline-block;
   padding: 10px;
-  background: #f2f2f2;
+  background: #f595f3;
   border-radius: 10px;
 }
 
 footer {
-  background: #ddd;
+  background: #95dff4;
   padding: 10px;
   text-align: center;
   font-size: 14px;
 }
+
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .footer {
+      background-color: #2b2b2b;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px 20px;
+    }
+
+    .footer-left {
+      max-width: 400px;
+    }
+
+    .footer-left h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .footer-left p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .footer-left .contact-info {
+      margin-bottom: 20px;
+    }
+
+    .footer-left .contact-info p {
+      margin: 5px 0;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .newsletter {
+      max-width: 350px;
+    }
+
+    .newsletter h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .newsletter p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: #ff52bf;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .newsletter button:hover {
+      background-color: #e044aa;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+
 </style>
- 
 <body>
-
-  <button onclick="lowToHigh()">lowToHigh</button>  
- <button onclick=" higTolow()">higTolow</button> 
- 
-
-    <input id="searchBox" type="text" placeholder="Type something...">
-  <button onclick="search()">Search</button>
- 
-  
-
-   
- <a href="">amazon.in</a>
-    <a href=""> account</a>
-    <a href="">mycart</a>
-    <a href="">contact</a>
-       
-      
-   
- 
-    
+  <header>
+    <h1>🛒 My Shop</h1>
     <nav>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Contact</li>
-        <li>Help</li>
-        <li>Coursces</li>
-        <li>Career's</li>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Cart</a>
+       <a href="#">Contact</a>
+       <a href="#">Help</a>
+        
+         
     </nav>
-    <div  class="image-row"> 
-     
-         <img  src="/img/mw.img"  width="200"> 
-         <img src="/img/kide.img" width="200"> 
- </div>
-
-        <header>
-    <h1>#CrazyLowPrices</h1>
-    <p>Get up to ₹150 cashback | Free Delivery | 5-day Returns</p>
   </header>
 
-  <section class="categories">
-    <div class="category" onclick="showAlert('Women')">
-      <p>Women</p>
-      <img src="/img/women.images" alt="">
-      <span>From ₹129</span>
+  <section class="products">
+    <div class="product-card">
+      <img src= "/img/women.images" alt="Product 1">
+      <h2>Product 1</h2>
+      <p>$199.99</p>
+      <button>Add to Cart</button>
     </div>
-    <div class="category" onclick="showAlert('Men')">
-      <p>Men</p>
-      <img src="/img/men.img" alt="">
-      <span>From ₹149</span>
-    </div>
-    <div class="category" onclick="showAlert('Home Essentials')">
-      <p>Home</p>
-      <img src="/img/99.img" alt="">
-      <span>From ₹99</span>
-    </div>
-  </section>
 
-  <section class="deals">
-    <h2>Kitchen Deals</h2>
-    <div class="deal-card">
-      <img src="/img/kitchen.img" alt="Kitchen Item" />
-      <p>Min. 35% off</p>
+    <div class="product-card">
+      <img src=  "/img/mw.img" alt="Product 2">
+      <h2>Product 2</h2>
+      <p>$499.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/img/kide.img" alt="Product 3">
+       
+      <h2>Product 3</h2>
+      <p>$999.99</p>
+      <button>Add to Cart</button>
     </div>
   </section>
 
   <footer>
-    
-    <p>Free Delivery | Pay on Delivery | Easy Returns</p>
-  </footer>
+    <p>© 2025 My Shop. All rights reserved <br>
+  Free Delivery | Pay on Delivery | Easy Returns</p>
+    </footer> 
 
    
     <main>
@@ -314,50 +403,29 @@ footer {
                                             <button>buy now</button>
                                             </div>
                                             </div>
-                                       
-                             </body>           
-                                     
+
+                                             <div class="footer">
+    <div class="footer-left">
+      <h2> My Shop</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+      <div class="contact-info">
+        <p>📞 Phone: +1-543-123-4567</p>
+        <p>📧 example@huddle.com</p>
+      </div>
+      <div class="social-icons">
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">🐦</a>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <h3>Newsletter</h3>
+      <p>To receive tips on how to grow your community, sign up to our weekly newsletter. We'll never send you spam or share your email.</p>
+      <input type="email" placeholder="Enter your email" />
+      <button>Subscribe</button>
+    </div>
+  </div>
+</body>
  
-  
- 
- 
- <script> 
- function showAlert(category) {
-  alert("You clicked on " + category + " category!");
-}
-    function search() {
-      let input = document.getElementById("searchBox").value;
-      alert("You searched for: " + input);
-    }
- 
-
- a.sort(  (a,b) => a.price - b.price)  // number
-     a.sort(  (a,b) => a.name.localeCompare(b.name)) // char value
-
-     
-
- var a=[]
-function  lowToHigh()
-          {
-                    a.sort((a, b)  =>  a.price  - b.price)
-                      console.log(a)
-                      document.writeln(JSON.stringify(a))
-                 
-          }
-
-
-          function  higTolow()
-          {
-                    a.sort((a , b)  =>  b.price  - a.price)
-                      console.log(a)
-                      document.writeln(JSON.stringify(a))
-                 
-          }
-        
-    
-      
-
-
-</script>
-
 </html>
