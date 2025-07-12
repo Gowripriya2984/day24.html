@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<style>
+    div{
+
+    }
+</style>
+<body>
+    <button onclick="openBox('virat')">virat</button>
+    <button onclick="openBox('dhoni')">dhoni</button>
+    <button onclick="openBox('rohith')">rohith</button>
+
+
+
+    <div id="virat">
+<img src="/img/0ed58cccd51c4758e634d0b29e8cb0c2.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit hic doloremque aliquid, temporibus mollitia doloribus ea magni saepe beatae blanditiis laborum, perspiciatis error, repudiandae similique quis neque molestias labore ullam!</p>
+    </div>
+
+
+    <div id="dhoni">
+        <img src="/img/ipl-chennai-super-kings-logo-FE31A09D67-seeklogo.com.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur ut ea! Itaque quibusdam laborum eos non deserunt voluptates tenetur placeat repellat cum, ex dolorum ducimus, quasi quisquam, voluptate illo.</p>
+    </div>
+    <div id="rohith" ></div>
+    <img src="/img/ipl-mumbai-indians-logo-5FD6E24965-seeklogo.com.png" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam at assumenda officiis facere fugiat! Possimus consequatur numquam deleniti, delectus voluptates nulla. Quis molestias facilis ratione consectetur itaque, dolore natus sed.</p>
+</body>
+
+
+<script>
+
+    function openBox(v)
+    {
+        var box =document.getElementById(v);
+        if(box.style.display == "block")
+    {
+        box.style.display ="none";
+    }
+else{
+box.style.display ="block";
+    }
+    }
+</script> 
+</html>

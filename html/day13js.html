@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<style>
+
+    div{
+        width: 400px;
+        height: 500px;
+        border: 2px solid black;
+        display: none;
+    }
+</style>
+<body>
+    <button  onclick="black()">black</button>
+    <button  onclick="white()">white</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis blanditiis iste, odio eligendi incidunt ducimus ab eveniet non dolorem facere quae in iure consectetur reprehenderit maiores at molestiae possimus quod?</p>
+ 
+     <input type="text" id="inp">
+    <button  onclick="changecolor()">Submit</button>
+
+       <center>
+        <div id="box">
+            <button  onclick="handleclose()"> close</button>
+
+        </div>
+        </center>
+
+</body>
+<script>
+    function black()
+    {
+        document.body.style.background="black"
+        document.body.style.color="white"
+    }
+
+     function white()
+    {
+        document.body.style.background="white"
+        document.body.style.color="black"
+    }
+
+    function changecolor()
+    {
+        var inp=document.getElementById("inp").value;
+        document.body.style.backgroundColor=inp;
+    }
+
+    function  handleclose(){
+        document.getElementById("box").style.display="none"
+    }
+
+    function openbox(){
+        document.getElementById("box").style.display="block"
+    }
+    setTimeout(  openbox  , 5000)
+
+    
+</script>
+</html> 

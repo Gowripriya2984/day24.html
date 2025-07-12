@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<style>
+div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    border:  5px dotted black  ;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: traslate(20px);
+        animation-name: spin;
+        animation-duration: 2s;
+        animation-iteration-count:5;
+
+}
+
+@keyframes spin{
+        to{transform: rotateX(360deg);}
+        from{transform: rotateX(0);}
+    }
+     
+    
+</style>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

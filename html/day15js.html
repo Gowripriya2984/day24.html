@@ -1,0 +1,131 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+     
+</head>
+<style>
+
+    #error1, #error2 {
+        color: red;
+    }
+
+
+    input{
+       border-radius: 3px;
+       border: 2px solid red;
+    }
+   
+   
+</style>
+<body>
+
+     
+         <center>
+              <div>
+              <label for="">First Name :</label>
+              <input type="text"  id="inp1">
+              <p id="error1"></p>
+         </div>
+
+         <div>
+              <label for="">Last Name :</label>
+              <input type="text" id="inp2">
+              <p id="error2"></p>
+         </div>
+
+
+         <div>
+              <label for="">Middle Name :</label>
+              <input type="text" id="inp3">
+              <p id="error3"></p>
+         </div>
+
+
+         <div>
+              <label for="">Age:</label>
+              <input type="text" id="inp4">
+              <p id="error4"></p>
+         </div>
+
+
+
+         <div>
+              <label for="">Phone number :</label>
+              <input type="text" id="inp5">
+              <p id="error5"></p>
+         </div>
+
+
+         <button onclick="handleform()">Submit</button>
+
+
+   
+         </center>
+     
+</body>
+<script>   
+
+       function handleform()
+       {
+
+               var inp1  = document.getElementById("inp1").value;
+               var inp2  = document.getElementById("inp2").value;
+                var inp3  = document.getElementById("inp3").value;
+                 var inp4  = document.getElementById("inp4").value;
+                  var inp5  = document.getElementById("inp5").value;
+
+               if(inp1 == "")
+               {
+                 document.getElementById("error1").innerHTML ="please fill the form"
+                 document.getElementById("inp1").style.border = "2px solid red"
+               }
+               else{
+                     document.getElementById("error1").innerHTML =""
+                          document.getElementById("inp1").style.border = "2px solid green"
+               }
+
+
+               if(inp2 == "")
+               {
+                 document.getElementById("error2").innerHTML ="please fill the form"
+                  document.getElementById("inp2").style.border = "2px solid red"
+               }
+               else{
+                      document.getElementById("error2").innerHTML =""
+                           document.getElementById("inp2").style.border = "2px solid green  "
+               }
+
+
+                if(inp3 == "")
+               {
+                 document.getElementById("error3").innerHTML ="please fill the form"
+                  document.getElementById("inp3").style.border = "2px solid red"
+               }
+               else{
+                      document.getElementById("error3").innerHTML =""
+                           document.getElementById("inp3").style.border = "2px solid green  "
+               }
+
+                if(inp4 == "")
+               {
+                 document.getElementById("error4").innerHTML ="please fill the form"
+                  document.getElementById("inp4").style.border = "2px solid red"
+               }
+               else{
+                      document.getElementById("error4").innerHTML =""
+                           document.getElementById("inp4").style.border = "2px solid green  "
+               }
+
+                if(inp5 == "")
+               {
+                 document.getElementById("error5").innerHTML ="please fill the form"
+                  document.getElementById("inp5").style.border = "2px solid red"
+               }
+               else{
+                      document.getElementById("error5").innerHTML =""
+                           document.getElementById("inp5").style.border = "2px solid green  "
+               }
+       }
+
+</script>
+</html>

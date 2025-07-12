@@ -1,0 +1,431 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+header {
+  background: #d1ef62;
+  color: rgb(28, 19, 19);
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: rgb(28, 21, 21);
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 18px;
+  color: #333;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #d8e37a;
+  color: rgb(34, 37, 37);
+  text-align: center;
+  padding: 15px;
+}
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-top: 80px;
+}
+
+.card{
+    height: 520px;
+    width: 400px;
+    background-color: #65758b;
+    border-radius: 15px;
+    padding: 0 20px 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+ img{
+    height: 150px;
+    width: 250px;
+    margin-bottom: 50px;
+
+}
+
+
+p{
+    padding: 30px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 10px;
+}
+
+.category {
+  background: #eee;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;
+  cursor: pointer;
+}
+
+.category p {
+  font-weight: bold;
+}
+
+.deals {
+  margin: 20px;
+  text-align: center;
+}
+
+.deal-card {
+  display: inline-block;
+  padding: 10px;
+  background: #f595f3;
+  border-radius: 10px;
+}
+
+footer {
+  background: #95dff4;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .footer {
+      background-color: #2b2b2b;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px 20px;
+    }
+
+    .footer-left {
+      max-width: 400px;
+    }
+
+    .footer-left h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .footer-left p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .footer-left .contact-info {
+      margin-bottom: 20px;
+    }
+
+    .footer-left .contact-info p {
+      margin: 5px 0;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .newsletter {
+      max-width: 350px;
+    }
+
+    .newsletter h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .newsletter p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      background-color: #ff52bf;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .newsletter button:hover {
+      background-color: #e044aa;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+
+</style>
+<body>
+  <header>
+    <h1>🛒 My Shop</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Cart</a>
+       <a href="#">Contact</a>
+       <a href="#">Help</a>
+        
+         
+    </nav>
+  </header>
+
+  <section class="products">
+    <div class="product-card">
+      <img src= "/img/women.images" alt="Product 1">
+      <h2>Product 1</h2>
+      <p>$199.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src=  "/img/mw.img" alt="Product 2">
+      <h2>Product 2</h2>
+      <p>$499.99</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="/img/kide.img" alt="Product 3">
+       
+      <h2>Product 3</h2>
+      <p>$999.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 My Shop. All rights reserved <br>
+  Free Delivery | Pay on Delivery | Easy Returns</p>
+    </footer> 
+
+   
+    <main>
+         
+            <div class="card">
+                <img src="/img/kid.1.jpeg" alt="img">
+                <h1>RAG</h1>
+                <p> Brand: Toy Balloon <br>
+                     Toy Balloon Kids Sky Blue Knee Length Girls Dress <br>₹499.00  <br> savings-75% ₹499
+                     M.R.P.:<del> M.R.P.: ₹1,999</del> <br>
+                     Inclusive of all taxes</p>
+                <div>
+                    <button>add to cart</button>
+                    <button>buy now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img   src="/img/image2.jpeg">
+                <h1>RAG</h1>
+                <p> Tasarika Women Ethnic jacquard Rama Round Neck Half Sleeve Full Length ethnic dress 2035_Rama <br>
+                    ₹2,636  MRP:<del>₹7,125</del> 63% OFF <br>
+                    Price inclusive of all tax <br>
+                    Seller :TRENDY CULTURE</p>
+ 
+ 
+ 
+ 
+                <div>
+                    <button>add to cart</button>
+                    <button>buy now</button>
+                </div>
+                </div>
+                <div class="card">
+                    <img  src="/img/images3.jpeg" alt="img">
+                    <h1>RAG</h1>
+                    <p> Women Yellow Cotton Printed Round Neck Dresses <br>SeherView Full Collection
+                        Jaypore <br>
+                        ₹2,793.00 <br>
+                       <del>₹ 3,990.00 </del>  
+                        30% OFF</p>
+                    <div>
+                        <button>add to cart</button>
+                        <button>buy now</button>
+                    </div>
+                    </div>
+                 
+                    <div class="card">
+                        <img  src="/img/image4.jpeg" alt="img">
+                        <h1>RAG</h1>
+                        <p> HERE&NOW <br>
+                            Men White Solid Denim Jacket <br>
+|                            MRP₹ 3799 <br>
+                              (Incl. of all taxes)
+                              Discount</p>
+                        <div>
+                            <button>add to cart</button>
+                            <button>buy now</button>
+                        </div>
+                        </div>
+                 
+                        <div class="card">
+                            <img  src="/img/image5.jpeg" alt="img">
+                            <h1>RAG</h1>
+                            <p> Bewakoof®<br>
+                               Men's Blue Icon Printed Oversized Shirt <br>
+                               ₹3,199  48% OFF <br>
+                                 ₹1,649
+                                  inclusive of all taxes</p>
+                            <div>
+                                <button>add to cart</button>
+                                <button>buy now</button>
+                            </div>
+                            </div>
+                 
+                            <div class="card">
+                                <img   src="/img/image6.webp" alt="img">
+                                <h1>RAG</h1>
+                                <p> Embroidered Art Silk Sherwani in Teal Blue
+                                       4034 Reviews on <br>
+                                    MRP<del>₹12,500.0020% </del> <br>₹10,000.00
+                                      <br>Inclusive of all taxes
+                                     Offers:4 <br>
+                                     Shipping:Free</p>
+                                    <div>
+                                    <button>add to cart</button>
+                                    <button>buy now</button>
+                                </div>
+                                </div>
+                 
+                                <div class="card">
+                                    <img  src="/img/image7.webp" alt="img">
+                                    <h1>RAG</h1>
+                                    <p> Kids Girl Tiranga Tricolour Frock Dress for Independence and Republic Day <br>
+                                           Rs. 1,299.00 ,Rs.<del>2,999.00</del>  </p>
+                                    <div>
+                                        <button>add to cart</button>
+                                        <button>buy now</button>
+                                    </div>
+                                    </div>
+                 
+                                    <div class="card">
+                                        <img  src="/img/image8.jpg" alt="img">
+                                        <h1>RAG</h1>
+                                        <p> Tahir Bandi Set <br>
+                                            MRP Rs. 7,267
+                                              MRP Rs.<del> 8,550 </del>   (15% OFF)</p>
+                                        <div>
+                                            <button>add to cart</button>
+                                            <button>buy now</button>
+                                            </div>
+                                            </div>
+
+                                             <div class="footer">
+    <div class="footer-left">
+      <h2> My Shop</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+      <div class="contact-info">
+        <p>📞 Phone: +1-543-123-4567</p>
+        <p>📧 example@huddle.com</p>
+      </div>
+      <div class="social-icons">
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">🐦</a>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <h3>Newsletter</h3>
+      <p>To receive tips on how to grow your community, sign up to our weekly newsletter. We'll never send you spam or share your email.</p>
+      <input type="email" placeholder="Enter your email" />
+      <button>Subscribe</button>
+    </div>
+  </div>
+</body>
+ 
+</html>

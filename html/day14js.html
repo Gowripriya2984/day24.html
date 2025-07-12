@@ -1,0 +1,107 @@
+< <!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<style>
+
+     input {
+           width: 300px;
+           height: 300px;
+     }
+        
+</style>
+<body>
+     
+      <input type="text"  id="inp">
+      <button  onclick="changeCap()">Cap</button>
+
+      <br>
+
+
+       <button  onclick="sizeChange('10px')">smaller</button>
+       <button onclick="sizeChange('20px')">normal</button>
+      <button onclick="sizeChange('30px')">bigger</button>
+
+      <button  onclick="changeColor('red')">red</button>
+      <button onclick="changeColor('blue')">bule</button>
+      <button onclick="changeColor('green')">green</button>
+</body>
+<script>
+
+
+      function changeCap()
+      {
+           var r  =   document.getElementById("inp").value;
+
+            var cap  =  r.toUpperCase()
+
+             document.getElementById("inp").value = cap ;
+
+      }
+
+      function sizeChange(n)
+      {
+           document.getElementById("inp").style.fontSize = n;
+      }
+
+      function changeColor(color)
+      {
+            document.getElementById("inp").style.color = color
+      }
+
+     
+
+     
+
+
+</script>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<style>
+
+        
+</style>
+<body>
+     
+      <input type="text"  id="inp">
+    
+
+      <br>
+
+      <input type="text" list="color" id="list">
+
+       <datalist  id="color">
+             <option value="red"></option>
+             <option value="green"></option>
+             <option value="blue"></option>
+             <option value="black"></option>
+             <option value="orange"></option>
+             
+       </datalist>
+
+        <button onclick="changeColor()"> Change Color</button>
+
+</body>
+<script>
+
+
+    
+      function changeColor()
+      {
+          var c =   document.getElementById("list").value;
+           console.log(c)
+           document.getElementById("inp").style.color = c;
+      }
+
+     
+
+
+</script>
+</html>

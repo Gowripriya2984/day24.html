@@ -1,0 +1,41 @@
+<html>
+       <head>
+
+       </head>
+       <style>
+          
+            div{
+                width: 400px;
+                height: 600px;
+                border: 2px solid rgb(71, 69, 69);
+                background-color: cadetblue;
+                display: none;
+               
+            }
+       </style>
+       <body>
+
+                 <div id="box">
+                     <button onclick="closeBox()">close</button>
+                 </div>
+       </body>
+       <script>
+
+           function closeBox()
+           {
+
+                 document.getElementById("box").style.display = "none";
+           }
+
+
+            setTimeout(  openbox  , 5000)
+
+            function openbox()
+            {
+                 document.getElementById("box").style.display = "block"
+            }
+
+            
+
+       </script>
+</html>

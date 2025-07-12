@@ -1,0 +1,84 @@
+  <html>
+       <head>
+
+       </head>
+       <style>
+          
+       </style>
+       <body>
+
+
+            
+             <button  onclick="black()">black</button>
+
+
+
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore distinctio iure aspernatur sed id nihil et autem veritatis, qui odio, animi consequuntur hic nam temporibus rem, minus reprehenderit tempora earum deserunt sequi atque. Ducimus itaque, quos totam deleniti quae aliquam consequuntur. Eius pariatur ullam tempore architecto hic fugit culpa suscipit eum dignissimos quidem maxime minus placeat nihil iure, provident enim sit voluptatem quia vero aspernatur aliquam? Quas officia, corrupti fugiat impedit quibusdam repellendus asperiores consectetur! Quas nisi reiciendis mollitia quisquam, itaque omnis esse repellendus illum enim fugiat beatae error sint iusto architecto cumque cum odit sunt! Quaerat beatae sapiente rem deleniti magni amet eum facere laboriosam itaque. Asperiores quae ratione perferendis eveniet, impedit dignissimos repellendus beatae cum distinctio hic sequi maiores quas incidunt, sit sapiente commodi ducimus dolores! Cupiditate iusto praesentium numquam eum repudiandae cumque eius, fugiat obcaecati, odit dolore rerum quibusdam! Corporis possimus est, culpa suscipit ratione iste corrupti laudantium rem voluptatem veritatis quibusdam. Reiciendis laudantium neque voluptatibus porro quia voluptatem soluta labore! Quia ex esse voluptas repellendus ipsum ab sapiente. Dolor iure minima placeat consequuntur. Est commodi esse dolore. Voluptatem similique consequatur nobis? Tempora, quidem. Cupiditate quas perferendis ipsum saepe repellendus. Velit, alias! Totam inventore reprehenderit, alias eaque impedit amet repellendus ullam eius dolorem provident error culpa optio deserunt suscipit ipsa qui id placeat, magnam libero? Illum explicabo nisi eaque, inventore fuga quod, labore enim tempore repellat reprehenderit corporis quam voluptatem? Eius    </p>
+   
+             
+       </body>
+       <script>
+
+             function white()
+             {
+               document.body.style.backgroundColor = "white";
+                 
+             }
+
+
+             function  black()
+             {
+
+             
+                document.body.style.backgroundColor = "black";
+                document.body.style.color  = "white"
+
+             }
+            
+
+       </script>
+</html> 
+
+
+
+<html>
+       <head>
+
+       </head>
+       <style>
+          
+            div{
+                width: 400px;
+                height: 600px;
+                border: 2px solid rgb(71, 69, 69);
+                background-color: cadetblue;
+                display: none;
+               
+            }
+       </style>
+       <body>
+
+                 <div id="box">
+                     <button onclick="closeBox()">close</button>
+                 </div>
+       </body>
+       <script>
+
+           function closeBox()
+           {
+
+                 document.getElementById("box").style.display = "none";
+           }
+
+
+            setTimeout(  openbox  , 5000)
+
+            function openbox()
+            {
+                 document.getElementById("box").style.display = "block"
+            }
+
+            
+
+       </script>
+</html>

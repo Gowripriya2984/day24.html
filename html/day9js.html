@@ -1,0 +1,75 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <button  onclick="add()">add</button>
+</body>
+<script>
+//local storage
+
+ var count =localStorage.getItem("count");
+    console.log(count)
+
+    function add()
+    {
+        count++;
+        console.log(count)
+        localStorage.setItem("count" , count);
+    }
+
+
+
+//session storage
+    var count =sessionStorage.getItem("count");
+    console.log(count)
+
+    function add()
+    {
+        count++;
+        console.log(count)
+        sessionStorage.setItem("count" , count);
+    }
+</script>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+</head>
+<body>
+    <button onclick="add()">add</button>
+</body>
+<script>
+    var count= localStorage.getItem("count")
+    console.log(count)
+    function add()
+    {
+        count++;
+        console.log(count)
+        localStorage.setItem("count" ,count)
+    }
+
+
+
+
+
+
+
+
+    var count= sessionStorage.getItem("count")
+    console.log(count)
+    function add()
+    {
+        count++;
+        console.log(count)
+        sessionStorage.setItem("count" ,count)
+    }
+</script>
+</html>

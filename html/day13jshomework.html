@@ -1,0 +1,59 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<style>
+         #virat{
+             
+             display: none;
+         }
+</style>
+<body> 
+    
+     
+    <button  onclick="openBox()">VIRAT</button>
+ <button  onclick="openBox()">DHONI</button>
+ <button  onclick="openBox()">ROHIT</button>
+      <div  id="virat">
+           
+           <img src="/img/virat.jpeg"">
+           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam iure atque autem quae cum veniam, tempora nostrum minima excepturi vitae sint, officiis dicta delectus sapiente doloremque nulla exercitationem! Molestiae, nobis.</p>
+      </div>
+
+
+       <div id="dhoni">
+        <img src="/img/dhoni.jpeg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quaerat porro at qui, vero sed hic nihil ex soluta ut cupiditate maxime voluptatem pariatur saepe dolorem debitis nulla facilis. Voluptates.</p>
+
+       </div>
+
+       <div id="rohit">
+        <img src="/img/rohit.jpeg" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum ducimus reprehenderit recusandae nihil nobis aperiam eum nesciunt rem minus? Odit nostrum consequuntur eius minus libero dolor similique blanditiis soluta qui!</p>
+
+       </div>
+</body>
+<script>
+
+     function openBox()
+     {
+          var box  =   document.getElementById("dhoni");
+
+
+          if(box.style.display == "block")
+          {
+              box.style.display = "none"
+          }
+          else{
+             box.style.display = "block"
+          }
+     }
+
+
+     
+
+
+</script>
+</html>

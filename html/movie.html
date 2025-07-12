@@ -1,0 +1,202 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Booking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #1e1e2f;
+      color: white;
+      display: flex;
+      min-height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background: #2c2c3e;
+      padding: 20px;
+    }
+    .sidebar h3 {
+      margin-bottom: 10px;
+    }
+    .sidebar label, .sidebar input {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .sidebar input[type="radio"],
+    .sidebar input[type="checkbox"] {
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .apply-btn {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: orange;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .main {
+      flex: 1;
+      padding: 20px;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .navbar h1 {
+      color: orange;
+    }
+    .navbar nav a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+    .featured {
+      background-image: url( ' avatar-the-way-of-water-poster');
+      
+      background-size: cover;
+      height: 200px;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .featured h2 {
+      font-size: 28px;
+    }
+    .btn {
+      background: orange;
+      padding: 8px 12px;
+      margin-right: 10px;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .movies {
+         
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .movie {
+          
+      background: #2c2c3e;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      width: 200px;
+    }
+    .movie img {
+        
+      width: 100%;
+      border-radius: 8px;
+    }
+    .price {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h3>Categories</h3>
+    <label><input type="checkbox" /> Adventure</label>
+    <label><input type="checkbox" /> Action</label>
+    <label><input type="checkbox" /> Animation</label>
+    <label><input type="checkbox" /> Comedy</label>
+    <label><input type="checkbox" /> Science Fiction</label>
+    <label><input type="checkbox" /> Thriller</label>
+    <label><input type="checkbox" /> History</label>
+    <label><input type="checkbox" /> Documentary</label>
+    <label><input type="checkbox" /> Fantasy</label>
+
+    <h3>Language</h3>
+    <label><input type="checkbox" /> English</label>
+    <label><input type="checkbox" /> Spanish</label>
+    <label><input type="checkbox" /> Hindi</label>
+
+    <h3>Time</h3>
+    <label><input type="radio" name="time" /> Morning</label>
+    <label><input type="radio" name="time" /> Night</label>
+
+    <button class="apply-btn">Apply Filters</button>
+  </div>
+
+  <div class="main">
+    <div class="navbar">
+      <h1>B3RAG</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Theaters</a>
+        <a href="#">News</a>
+      </nav>
+    </div>
+
+    <div class="featured">
+        
+      <h2>Avatar: The Way of Water</h2>
+      <img   src="/img/avatar-the-way-of-water-poster.avif" alt="">
+      <div>
+        <button class="btn">Book Now</button>
+        <button class="btn">Play Trailer</button>
+      </div>
+    </div>
+     
+
+    <div class="movies">
+      <div class="movie">
+        <img src="/img/Jurassic World.jpeg" alt="Jurassic World">
+        <h4>Jurassic World</h4>
+        <p>Screen: Platinum</p>
+        <p class="price">500$</p>
+        <button class="btn">Buy Tickets</button>
+      </div>
+      <div class="movie">
+        <img  src="/img/vikram movie.jpeg" alt="Vikram">
+        <h4>Vikram</h4>
+        <p>Screen: Gold</p>
+        <p class="price">450$</p>
+        <button class="btn">Buy Tickets</button>
+      </div>
+      <div class="movie">
+        <img src="/img/firestarter.avif" alt="Firestarter">
+        <h4>Firestarter</h4>
+        <p>Screen: Silver</p>
+        <p class="price">400$</p>
+        <button class="btn">Buy Tickets</button>
+      </div>
+      <div class="movie">
+        <img src="/img/devara1 movie.jpeg"   alt="Firestarter">
+        <h4>Devara</h4>
+        <p>Screen: Silver</p>
+        <p class="price">500$</p>
+        <button class="btn">Buy Tickets</button>
+      </div>
+      <div class="movie">
+        <img   src="/img/salaar1.jpeg" alt="Firestarter">
+        <h4>Salaar</h4>
+        <p>Screen:  Platinum</p>
+        <p class="price">450$</p>
+        <button class="btn">Buy Tickets</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+ 

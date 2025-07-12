@@ -1,0 +1,191 @@
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>M Gowri Priya - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    
+    nav {
+      background-color: darkgreen;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .about { background-color: limegreen; }
+    .qualifications { background-color: aqua; }
+    .skills { background-color: lightyellow; }
+    .contact { background-color: lightcoral; }
+    .help { background-color: lightgray; }
+    .careers { background-color: lightpink; }
+    .location{background-color: rgb(217, 178, 218);}
+
+    h2 {
+      margin-top: 0;
+    }
+
+     #btn
+       {
+               display: none;
+       }
+
+       @media all and  (max-width: 540px)
+       {
+
+              nav{
+                      display: none;
+              }
+
+              #btn{
+                      display: block;
+              }
+       }
+
+
+
+     ul{
+               display: none;
+               width: 300px;
+               height: 400px;
+               background-color: rgb(213, 255, 116);
+               border: 2px solid rgb(9, 2, 2);
+               border-radius:  0 30px 30px 0;
+               text-align: center;
+               list-style: none;
+               line-height: 70px;
+               
+       }
+
+       li:hover{
+
+              background-color: white;
+              
+
+       }
+
+  </style>
+</head>
+<body>
+
+   
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+    <a href="#help">Help</a>
+    <a href="#courses">Skills</a>
+    <a href="#careers">Career’s</a>
+    <a href="#location">location</a>
+  </nav>
+ <div id="btn">
+                      <button  onclick="openBox()">open</button>
+               </div>
+
+
+  <ul  id="ul">
+                <li>home</li>
+                   <li>about</li>
+                   <li>contact</li>
+                   <li>help</li>
+                   <li>courses</li>
+                   <li>careers</li>
+                   <li>Location</li>
+                  
+              
+          </ul>
+
+ 
+  <div class="section about" id="about">
+    <h2>M Gowri Priya</h2>
+    <p>My name is Gowri Priya, my native is Tirupati. I am currently staying in Bangalore.</p>
+  </div>
+
+  
+  <div class="section qualifications">
+    <h2>Qualifications</h2>
+    <p>I completed my degree in Computer Science at SPW Degree and PG College, Tirupati.</p>
+  </div>
+
+  
+  <div class="section skills">
+    <h2>Skills</h2>
+    <p>My skills include SQL and JAVA.</p>
+  </div>
+
+  
+  <div class="section contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: gowripriya@gmail.com</p>
+    <p>Phone: +91-9876543210</p>
+    <p>Location: Bangalore, India</p>
+  </div>
+
+ 
+  <div class="section help" id="help">
+    <h2>Help</h2>
+    <p>If you need assistance or have questions, feel free to reach out via email or the contact form on this site.</p>
+  </div>
+
+  
+  <div class="section careers" id="careers">
+    <h2>Careers</h2>
+    <p>Currently looking for opportunities in software development roles focusing on Java, SQL, and full stack web development.</p>
+  </div>
+<div class="section location" id="location">
+    <h2>Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8691918607146!2d77.61304407484042!3d12.916127787394162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14fb12ef8b81%3A0xf064c4524732d374!2sBesant%20Technologies!5e0!3m2!1sen!2sin!4v1743040788766!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </iframe>
+</div>
+
+
+  
+</body>
+
+<script>
+
+        function openBox()
+        {
+              var box  =  document.getElementById("ul");
+
+
+              if(box.style.display == "block")
+              {
+                   box.style.display   = "none"
+              }
+              else{
+                          box.style.display   = "block" 
+              }
+        }
+
+        
+
+         
+
+</script>
+
+</html>
+
+
+ 

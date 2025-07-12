@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    
+</body>
+<script>
+
+    var a= function()
+    {
+        console.log("hello")
+    }
+    a()
+
+
+//arrow function
+    var a=(a,b)=>
+    {
+        console.log(a+b)
+    }
+    a(30,40)
+
+
+    var a=(a,b)=>
+    {
+        console.log(a-b)
+    }
+    a(30,40)
+
+
+
+    var a=(a,b)=>
+    {
+        console.log(a*b)
+    }
+    a(30,40)
+
+
+    function  tackName(n, c)
+    {
+        console.log("hello" +n)
+        c()
+    }
+
+
+    function saybye()
+    {
+        console.log("bye")
+    }
+
+    tackName("gowri",saybye)//tackName("gowri",=>{console.log("bye")})}
+
+
+</script>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farmer Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+footer p {
+  margin: 0;
+}
+
+</style>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">GreenFarm</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-light text-center p-5">
+    <div class="container">
+      <h1 class="display-4">Welcome to GreenFarm</h1>
+      <p class="lead">Fresh & Organic Produce from Our Fields to Your Table</p>
+      <a href="#products" class="btn btn-success">Explore Products</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-5 bg-white">
+    <div class="container">
+      <h2 class="text-center">About Us</h2>
+      <p class="text-center">We are a community of farmers who grow 100% organic food using sustainable methods. Our mission is to provide healthy food directly to consumers without any middlemen.</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="p-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Products</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img   src="/img/vegatibles.jpeg" class="card-img-top" alt="Vegetables">
+            <div class="card-body">
+              <h5 class="card-title">Organic Vegetables</h5>
+              <p class="card-text">Freshly harvested, pesticide-free vegetables.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/img/fruitsimg.jpeg"  class="card-img-top" alt="Fruits">
+            <div class="card-body">
+              <h5 class="card-title">Fresh Fruits</h5>
+              <p class="card-text">Juicy, sweet and naturally ripened fruits.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img   src="/img/grains and pulses.jpeg" class="card-img-top" alt="Grains">
+            <div class="card-body">
+              <h5 class="card-title">Grains & Pulses</h5>
+              <p class="card-text">Healthy grains grown without harmful chemicals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-success text-white text-center p-3">
+    <p class="mb-0">© 2025 GreenFarm. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+ 
+
+ 

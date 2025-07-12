@@ -1,0 +1,147 @@
+ 
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #eff88d, #e4e4e4);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: white;
+      width: 90%;
+      max-width: 1000px;
+      display: flex;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .left {
+      flex: 1;
+      background-color: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .left img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .right {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .right h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #ccc;
+      padding: 15px 0;
+    }
+
+    .accordion-title {
+      font-weight: 600;
+      cursor: pointer;
+      position: relative;
+      padding-right: 20px;
+    }
+
+    .accordion-title::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      font-weight: bold;
+    }
+
+    .accordion-title.active::after {
+      content: "-";
+    }
+
+    .accordion-content {
+      display: none;
+      padding-top: 10px;
+      color: #555;
+    }
+
+    .accordion-content.open {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+     <img src="/img/imagejs.jpeg" alt="">
+  </div>
+  <div class="right">
+    <h2>FAQ</h2>
+
+    <div class="accordion-item">
+      <div class="accordion-title">How many team members can I invite?</div>
+      <div class="accordion-content">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-title">What is the maximum file upload size?</div>
+      <div class="accordion-content">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-title">How do I reset my password?</div>
+      <div class="accordion-content">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-title">Can I cancel my subscription?</div>
+      <div class="accordion-content">Yes! Send us a message and we’ll process your request no questions asked.</div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-title">Do you provide additional support?</div>
+      <div class="accordion-content">Chat and email support is available 24/7. Phone lines are open during normal business hours.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const items = document.querySelectorAll('.accordion-item');
+
+  items.forEach(item => {
+    const title = item.querySelector('.accordion-title');
+    const content = item.querySelector('.accordion-content');
+
+    title.addEventListener('click', () => {
+      title.classList.toggle('active');
+      content.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>
+
+
+ 

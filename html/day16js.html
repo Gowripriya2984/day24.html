@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+</head>
+<body>
+      <h1>List of Student</h1>
+
+
+                  <input type="text" placeholder="enter the student name" id="inp">
+                  <button onclick=" handleSubmit()">submit</button>
+
+                   
+                   <table id="table" border="2">
+                          <tr>
+                                 <td>      name   </td>
+                          </tr>
+                           <tbody  id="tbody">
+
+                           </tbody>
+                          
+                   </table>
+    
+</body>
+<script>
+     function handleSubmit()
+     {
+        var inpname =document.getElementById("inp").value;
+       var row= document.createElement("tr");
+       var cell= document.createElement("td");
+
+       cell.innerHTML=inpname;
+
+       row.appendChild(cell)
+
+       document.body.appendChild(row)
+       document.getElementById("tbody").appendChild(row)
+     }
+</script>
+</html>

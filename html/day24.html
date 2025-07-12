@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+
+     <button  onclick="lowToHigh()">low to high</button>
+     <button  onclick="higTolow()">high to low</button>
+    
+</body>
+<script>
+
+      var p1 =   {
+          "name" : "vasanth" ,
+          "age": 50
+       }
+
+       var p2 =   {
+          "name" : "kiran" ,
+          "age": 29
+       }
+
+
+       var p3 =   {
+          "name" : "rohith" ,
+          "age":  21
+       }
+
+      
+
+
+          var ar  = [p1 , p2 , p3]
+
+          console.log(ar)
+
+
+          function  lowToHigh()
+          {
+                    ar.sort((x , y)  =>  x.age  - y.age)
+                      console.log(ar)
+                      document.writeln(JSON.stringify(ar))
+                 
+          }
+
+
+          function  higTolow()
+          {
+                    ar.sort((x , y)  =>  y.age  - x.age)
+                      console.log(ar)
+                      document.writeln(JSON.stringify(ar))
+                 
+          }
+             
+
+      
+
+    </script>
+</html>

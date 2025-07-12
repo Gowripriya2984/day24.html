@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+</head>
+<body>
+    
+</body>
+<script>
+    var p1 = {
+        "name"  :"priya",
+        "age"  : 30
+    }
+
+
+    var p2 = {
+        "name"  :"rani",
+        "age"  : 33
+    }
+
+    var p3 = {
+        "name"  :"latha",
+        "age"  : 20
+    }
+
+    var p4 = {
+        "name"  :"bablu",
+        "age"  : 15
+    }
+
+    var p5 = {
+        "name"  :"rohini",
+        "age"  : 22
+    }
+
+     var ar = [p1,p2,p3,p4,p5]
+     
+    var data = JSON.stringify(ar);
+     
+
+    
+
+    document.writeln(JSON.stringify(ar))
+
+
+    ar.sort((c,d)=>{return  c.age - d.age})
+    console.log(JSON.stringify(ar))
+
+</script>
+</html>

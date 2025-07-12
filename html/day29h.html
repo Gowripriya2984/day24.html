@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<style>
+          #error1 , #error2{
+                 color: red;
+          }
+</style>
+<body>
+
+            <center>
+                     
+                    <p>
+                        <span>First Name :</span>
+                        <input type="text" id="inp1">
+                        <p id="error1"></p>
+                    </p>
+                <p>
+                        <span>Last  Name :</span>
+                        <input type="text" id="inp2">
+                        <p id="error2"></p>
+                       
+                </p>
+                <button  onclick="handleSubmit()">Submit</button>
+            </center>
+</body>
+<script>
+
+         function handleSubmit()
+         {
+                  var fname  =  document.getElementById("inp1").value;
+                  var lname  = document.getElementById("inp2").value ;
+
+
+                  if(fname  == "")
+                  {
+                     document.getElementById("error1").innerHTML="please fill the form"
+                  }
+                  else{
+                        
+                     document.getElementById("error1").innerHTML=""
+                  }
+
+
+                  if(lname  == "")
+                  {
+                     document.getElementById("error2").innerHTML="please fill the form"
+                  }
+                  else{
+                        
+                     document.getElementById("error2").innerHTML=""
+                  }
+
+
+         }
+
+         
+
+            
+</script>
+</html>

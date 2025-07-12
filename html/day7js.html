@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    
+</body> 
+<script>
+
+
+
+    var a = [10,20,30,40]
+    var b = [200,3000,400,500]
+
+    var c = [...a,...b]
+    console.log(c)
+
+
+    function add(a, b,...c)
+    {
+        console.log(a, b, c)
+    }
+
+    add()
+    add(10)
+    add(10,20,30)
+    add(30,40,50,60,70,80)
+    add(40,50,20,10,50,60,80,90,50)
+
+
+    class student
+    {
+        constructor(name,age)
+        {
+            this.name=name;
+            this.age=age;
+        }
+    }
+var p1= new student("gowri", 20,"null")
+
+console.log(p1)
+
+
+
+
+class employee
+{
+    constructor(name,age,email,salary)
+    {
+       this.name=name;
+       this.age=age;
+       this.email=email;
+       this.salary=salary;
+
+    }
+}
+
+
+var p2=new employee("priya", 20,"p@email.com",53000)
+var p3=new employee("prathyusha", 23,"p@email.com",43000)
+var p4=new employee("gowri", 21,"g@email.com",53000)
+var p5=new employee("kavya", 22,"k@email.com",43000)
+
+console.log(p2)
+console.log(p3)
+console.log(p4)
+console.log(p5)
+
+
+
+
+</script>
+</html>

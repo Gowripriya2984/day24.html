@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+</head>
+<body>
+    
+</body>
+<script>
+    function printname(n,callback){
+        console.log("hi"+n)
+    callback()
+    }
+    function saybye()
+    {
+        console.log("bye!")
+    }
+printname("bablu",saybye)
+
+//equal to bouble equal to 
+var a=10;
+var b="10";
+console.log(a==b)
+console.log(a===b)
+//speard operator
+
+var a=[10,20,30,40]
+var b=[...a,200,300]
+console.log(b)
+//rest parameter
+function add(a,b,...c){
+    console.log(c)
+}
+add(10,20,30,40,60);
+add(10,20,30,40,60,80);
+add(10,20,30,40,60,90,100);
+add(10,20,30,40,60,30,50,70);
+</script>
+</html>
