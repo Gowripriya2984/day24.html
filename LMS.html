@@ -1,0 +1,1110 @@
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LMS Homepage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+  body {
+   
+   margin: 0;
+  padding: 0; 
+font-family: Arial, sans-serif;
+
+}
+
+header {
+ 
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+ 
+  font-size: 26px;
+  font-weight: bold;
+   
+}
+.logo span {
+  color: gray;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+ 
+  
+      .demo-btn {
+  background-color: #1d6933;
+  color: white;
+    display: flex;
+      gap: 20px; /* Space between buttons */
+      justify-content: center; /* Center horizontally */
+      margin-top: 20px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+   cursor: pointer;
+} 
+
+.hero {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+   background: linear-gradient(to right, #cfe3cf, #81ee99); 
+  color: rgb(13, 21, 22);
+  padding: 60px;
+}
+
+.hero-text {
+  max-width: 100%;
+}
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.hero-image {
+  position: relative;
+  
+}
+.hero-image img {
+    
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+.rating {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.floating-icons {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.phone-icon,
+.whatsapp-icon {
+  text-decoration: none;
+  font-size: 24px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  background-color: #f9f9f9;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h5 {
+  color: #888;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.solutions {
+  background: linear-gradient(to right, #dbeafe, #e0f2fe); /* Light blue gradient */
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.solutions h5 {
+  color: #888;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.solutions h2 {
+  font-size: 30px;
+  color: #1e293b;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 40px;
+  background-color: #0f5132;
+  color: white;
+  border-top: 1px solid #e2e8f0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+
+.card-content p {
+  font-size: 15px;
+  color: #d1fae5;
+}
+
+
+ body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #fff;
+}
+
+.why-choose {
+  background: radial-gradient(circle at center, #0f172a 0%, #1e293b 100%);
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.why-choose .highlight {
+  color: #22d3ee;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.why-choose h2 {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+ .comparison {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background: radial-gradient(circle at center, #0f172a 0%, #1e293b 100%);
+  color: white;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.comparison-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.comparison h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.features li{
+  margin-bottom: 12px;
+}
+
+.features.good li {
+  margin-bottom: 15px;
+  color: #d1fae5;
+    
+}
+
+.features.bad li {
+  margin-bottom: 15px;
+  color: #fecaca;
+   
+}
+
+.features li strong {
+  color: #ffffff;
+}
+
+ 
+
+.comparison-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+}
+
+.circle-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #1e40af;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 0 10px rgba(255,255,255,0.1), 0 0 0 20px rgba(255,255,255,0.05);
+}
+
+
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #e8f5e9);
+      color: #333;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .section h2 {
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    .card1-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .card1 {
+      background-color: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .card1:hover {
+      transform: translateY(-5px);
+    }
+
+    .card1 img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card1-title {
+      padding: 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .card1-info {
+      display: none;
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+      border-top: 1px solid #eee;
+      background-color: #f9f9f9;
+    }
+
+    .card1.active .card-info {
+      display: block;
+    }
+
+
+
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    /* Section with background */
+    .banner {
+      background: url("/img/Call-Center-Operations.avif") center/cover no-repeat;
+      background-color: #a8efab;
+      padding: 60px 20px;
+      color: white;
+      text-align: left;
+      position: relative;
+      border-radius: 15px;
+      margin: 30px;
+    }
+
+    .banner h2 {
+      font-size: 28px;
+      max-width: 500px;
+    }
+
+    .banner button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .banner button:hover {
+      background-color: #e0e0e0;
+    }
+
+    /* Popup overlay */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    /* Popup form */
+    .popup-form {
+      background: rgb(243, 239, 239);
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .popup-form h3 {
+      margin-top: 0;
+    }
+
+    .popup-form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .popup-form input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .popup-form button {
+      margin-top: 20px;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      background-color: #4caf50;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .popup-form .close-btn {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 20px;
+      background: none;
+      border: none;
+      color: #888;
+      cursor: pointer;
+    }
+
+    .popup-form .close-btn:hover {
+      color: red;
+    }
+
+
+
+
+     /* online class */
+     body {
+      
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    .section1 { 
+      background:url("/img/2f4cddcc6c0b451c8799dd2e17f2b4a0.webp");
+       background-color: #f9aff4;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 50px;
+      max-width: none;
+      margin: auto;
+      gap: 40px;
+      border-radius: 15px;
+      margin: 50px;
+      text-align: left;
+      position: relative;
+    }
+
+    .left-image img {
+      width: 200%;
+      max-width: 450px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .right-content {
+      max-width: 600px;
+    }
+
+    .right-content h4 {
+      color: #080808;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .right-content h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #ffffff;
+    }
+
+    .card2 {
+      background-color: #f4f4f4;
+      color: #222;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card2:hover {
+      transform: translateY(-5px);
+    }
+
+    .card2 h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .card2 p {
+      margin: 0;
+      font-size: 14px;
+      color: #c1beb3;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .right-content {
+        max-width: 100%;
+      }
+    }
+
+    /* quations */
+        
+ .faq-section {
+  padding: 60px 30px;
+  background: #f5f9fc;
+}
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.faq-images {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.faq-content {
+  flex: 2;
+  min-width: 300px;
+}
+
+.faq-subtitle {
+  color: #f416a2;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.faq-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.accordion-item {
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.accordion-header {
+  background: white;
+  border: none;
+  padding: 16px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion-body {
+  padding: 16px;
+  display: none;
+  font-size: 15px;
+  color: #374151;
+  background: #f8fafc;
+}
+
+.accordion-item.active .accordion-body {
+  display: block;
+}
+
+.accordion-item.active .icon {
+  transform: rotate(180deg);
+}
+/* footer */
+.footer1 {
+  background: #060707;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border-radius: 100vh;
+   font-size: 28px;
+      
+}
+
+ 
+    </style>
+<body>
+  <header>
+    <div class="logo"> COURCE HUNT</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">What We Provide</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+      
+ 
+  </div>
+    <!-- <button class="demo-btn" onclick=" openForm()"> Login</button>
+    <button class="demo-btn" onclick=" openForm()"> Register</button> -->
+         
+<button class="demo-btn" onclick=" openForm()"> Apply</button>
+   
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1> All-in-One Learning<br>Management System </h1>
+      <div class="stats">
+        <div><strong>1000+</strong><br>Institutes</div>
+        <div><strong>1M+</strong><br>Students</div>
+      </div>
+      <button class="demo-btn" onclick=" openForm()">Apply </button>
+    </div>
+    <div class="hero-image">
+      <img   src="/img/students-showing-thumbs-up-school-education-concept-happy-team-33080622.webp" alt="Student"> -->
+      <div class="rating">4.5⭐ Rating</div>
+    </div>
+  </section>
+
+  <!-- Floating Contact Icons -->
+  <div class="floating-icons">
+    <a href="tel:+911234567890" class="phone-icon">📞</a>
+    <a href="https://wa.me/911234567890" target="_blank" class="whatsapp-icon">🟢</a>
+  </div>
+
+  <section class="about">
+  <div class="about-text">
+    <h5>ABOUT US</h5>
+    <h2>Revolutionizing Digital Learning & Assessments</h2>
+    <p>
+      Cource hunt is a premier EdTech platform empowering institutions, corporates, digital creators, schools, and colleges with secure online assessments, intuitive learning management, and AI-driven performance analytics. With over a decade of expertise, we revolutionize digital education, enabling seamless learning experiences for educators, trainers, and learners alike.
+    </p>
+    <button class="demo-btn" onclick="requestDemo()">Apply</button>
+  </div>
+  <div class="about-image">
+    <img  src="/img/group of student image.img" alt="About Us Image">
+  </div>
+</section>
+
+<section class="solutions">
+  <h5>WHO IS IT FOR?</h5>
+  <h2>Cource hunt is the<br>perfect solution for</h2>
+  
+  <div class="cards">
+    <div class="card">
+      <img  src="/img/Coaching Centers.img" alt="Coaching Centers">
+      <div class="card-content">
+        <h3>Coaching Centers</h3>
+        <p>Support students with exams and performance insights.</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img  src="/img/corporate-business-team-manager-meeting-close-up-corporate-business-team-manager-meeting-131960975.webp" alt="Corporates">
+      <div class="card-content">
+        <h3>Corporates</h3>
+        <p>Conduct employee training, skill assessments, and pre-employment tests.</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img  src="/img/campus.img" alt="Campus Hiring">
+      <div class="card-content">
+        <h3>Campus Hiring</h3>
+        <p>Conduct online assessments, evaluate candidates, and make data-driven recruitment decisions.</p>
+      </div>
+    </div>
+  
+
+  <div class="card">
+      <img   src="/img/College & School.img" alt="Campus Hiring">
+      <div class="card-content">
+        <h3> College & School Practitioners</h3>
+        <p> Simplify assessments and track student performance effortlessly.</p>
+      </div>
+    </div>
+  
+
+
+  <div class="card">
+      <img   src="/img/Digital Content.img" alt="Campus Hiring">
+      <div class="card-content">
+        <h3> Digital Content Creators</h3>
+        <p>  Monetize and deliver interactive quizzes and certification programs.</p>
+      </div>
+    </div>
+  
+</section>
+
+  
+
+  <section class="why-choose">
+    <p class="highlight">WHY TESTPRESS STANDS OUT?</p>
+    <h2>Built for Accuracy, Security & Efficiency</h2>
+
+    <section class="comparison">
+  <div class="comparison-column">
+    <h3>Cource hunt (Best Choice)</h3>
+    <ul class="features good">
+      <li>✅ <strong>Comprehensive Course Management</strong> – Videos, exams, assignments, PDFs, and live sessions.</li>
+      <li>✅ <strong>AI-Powered Learning</strong> – AI-driven query resolution, including academic doubt assistance for learners.</li>
+      <li>✅ <strong>Secure & Scalable</strong> – DRM, MFA for educators, role-based restricted access, and event logs.</li>
+      <li>✅ <strong>Supervisor / Instructor Dashboard</strong> – Real-time insights to track student engagement, progress, and test performance.</li>
+      <li>✅ <strong>Seamless Integration & Automation</strong> – Integrates with Zoom, payment gateways, and automates enrollments, notifications, and certification issuance.</li>
+      <li>✅ <strong>Personalized & Mobile-Optimized Learning</strong> – Seamless mobile experience for flexible access.</li>
+    </ul>
+  </div>
+
+  <div class="comparison-center">
+    <div class="circle-logo">Testpress...</div>
+  </div>
+
+  <div class="comparison-column">
+    <h3>Other Learning Platforms</h3>
+    <ul class="features bad">
+      <li>❌ <strong>Limited Exam Support</strong> – Often lacks comprehensive exams and assignments.</li>
+      <li>❌ <strong>Limited Security Measures</strong> – No DRM, MFA for educators, or role-based restricted access.</li>
+      <li>❌ <strong>No AI-Powered Assistance</strong> – Lacks AI-driven query resolution for academic doubts.</li>
+      <li>❌ <strong>No Learner Tracking</strong> – No real-time instructor insights for engagement and performance.</li>
+      <li>❌ <strong>Limited Automation</strong> – No seamless integration for enrollments, notifications, or certification issuance.</li>
+      <li>❌ <strong>Hidden Charges</strong> – Confusing pricing with extra fees.</li>
+    </ul>
+  </div>
+    </section>
+  </section>
+ 
+
+
+<div class="section">
+    <p>OUR PROCESS</p>
+    <h2>Simple & Efficient</h2>
+
+    <div class="card1-container">
+      <!-- Card 1 -->
+      <div class="card1" onclick="toggleInfo(this)">
+        <img  src="/img/Create Video Courses & Exams.img" alt="Create Courses">
+        <div class="card1-text">Create Video Courses & Exams</div>
+        <div class="info-box">
+          Upload recorded lectures, add quizzes, and schedule tests to build a complete online course.
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card1" onclick="toggleInfo(this)">
+        <img src= "/img/Manage Access, Security & Pricing.png" alt="Manage Access">
+        <div class="card1-text">Manage Access, Security & Pricing</div>
+        <div class="info-box">
+          Set user permissions, control content access, and define course pricing or free plans.
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card1" onclick="toggleInfo(this)">
+        <img src= "/img/Track Performance & Insights.img" alt="Track Performance">
+        <div class="card1-text">Track Performance & Insights</div>
+        <div class="info-box">
+          Monitor learner progress, exam scores, completion status, and engagement with visual reports.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Banner Section -->
+  <div class="banner">
+    <h2>Ready to Transform Your Online Learning & Assessments?</h2>
+    <button onclick="openForm()">Apply</button>
+  </div>
+
+  <!-- Popup Form -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-form">
+      <button class="close-btn" onclick="closeForm()">&times;</button>
+      <h3>Apply</h3>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your Email">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="Your Phone Number">
+      <button onclick="submitForm()">Submit</button>
+    </div>
+  </div>
+
+<!-- online class -->
+
+  <div class="section1">
+    <!-- Left Image -->
+    <div class="left-image">
+      <img  src="/img/online teaching.img" alt="Person Teaching">
+    </div>
+
+    <!-- Right Content -->
+    <div class="right-content">
+      <h4>What We Provide</h4>
+      <h2>Online Teaching Platform<br>Tailored For</h2>
+
+      <div class="card2">
+        <h3>Coaching & Exam Preparation Institutes</h3>
+        <p>Deliver structured courses, mock tests, and analytics-driven learning.</p>
+      </div>
+
+      <div class="card2">
+        <h3>YouTube & Instagram Creators</h3>
+        <p>Monetize educational content with a secure LMS for premium courses.</p>
+      </div>
+
+      <div class="card2">
+        <h3>Training Institutions</h3>
+        <p>Provide skill-based learning with seamless assessments and certifications.</p>
+      </div>
+
+      <div class="card2">
+        <h3> Corporate Training for Frontline Teams</h3>
+        <p> Upskill employees with interactive courses, progress tracking, and compliance training.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+   <footer class="footer1">
+    <h3><p> Save time with a full featured online exam software</p></h3>
+    </footer> 
+
+
+    <!-- quations -->
+
+      <section class="faq-section">
+  <div class="faq-container">
+    
+    <div class="faq-images">
+      <img src="/img/faq.img" alt="User 1" class="faq-img">
+      <img src="/img/faq3.img" alt="User 3" class="faq-img">
+    </div>
+ 
+    <div class="faq-content">
+      <h3> <p class="faq-subtitle">FREQUENTLY ASKED QUESTIONS</p></h3>
+      <h2 class="faq-title">Frequently Ask Questions</h2>
+
+      <div class="accordion">
+
+        <div class="accordion-item active">
+          <button class="accordion-header">
+            What is Testpress, and how can it help my institution?
+            <span class="icon">⮝</span>
+          </button>
+          <div class="accordion-body">
+            Testpress is a comprehensive LMS designed to streamline online education, exam preparation, and student engagement. It helps educators deliver interactive learning experiences.
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Can I conduct live classes and track student progress on Testpress?
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">Yes! You can host live classes and track performance in real-time.</div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            What types of exams can I create using Testpress?
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">Create MCQs, subjective, mock exams, and more with customizable settings.</div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Is Testpress suitable for corporate training and skill development?
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">Yes, it's great for onboarding, upskilling, and remote team training.</div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Does Testpress offer mobile-friendly learning options?
+            <span class="icon">+</span>
+          </button>
+          <div class="accordion-body">Absolutely! The platform works smoothly on all devices.</div>
+        </div>
+
+      </div>
+    </div>
+  </div> 
+
+   
+</section>
+
+ 
+</body>
+ 
+</html>
+ 
+ <script src="script.js"></script> 
+</body>
+<script>
+  function requestDemo() {
+  alert("Thank you! A team member will contact you shortly.");
+}
+
+function requestDemo() {
+  alert("Thank you! A team member will contact you shortly.");
+}
+
+function toggleInfo(img) {
+  
+      // Remove "active" from other cards
+      document.querySelectorAll('.card1').forEach(c => {
+        if (c !== card1) c.classList.remove(' active');
+      
+      });
+
+      // Toggle clicked card
+      card1.classList.toggle(' active');
+    }
+ 
+ 
+ function openForm() {
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    function closeForm() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+    function submitForm() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+
+      if (name && email && phone) {
+        alert("Form submitted!\nName: " + name + "\nEmail: " + email + "\nPhone: " + phone);
+        closeForm();
+      } else {
+        alert("Please fill all fields.");
+      }
+    }
+      
+    // quations
+ const accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach(item => {
+  const header = item.querySelector('.accordion-header');
+
+  header.addEventListener('click', () => {
+    const openItem = document.querySelector('.accordion-item.active');
+
+    // Close the already open item
+    if (openItem && openItem !== item) {
+      openItem.classList.remove('active');
+    }
+
+    // Toggle current item
+    item.classList.toggle('active');
+  });
+});
+ 
+  
+</script>
+</html>
+
+
+ 
+
+
+  
